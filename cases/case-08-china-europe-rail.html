@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>团结村中心站：中欧班列十年增长3.6倍的枢纽传奇 · 中欧班列团结村 — 西部陆海新通道商务案例库</title><link rel="stylesheet" href="case-style.css"></head><body><div class="case-wrapper"><a href="../index.html" class="back-link" onclick="localStorage.setItem('nltc_goto','business');return true">← 返回案例库</a><div class="case-header"><div class="case-tag">枢纽经济 · 通道增长</div><h1>团结村中心站：中欧班列十年增长3.6倍的枢纽传奇 · 中欧班列团结村</h1><div class="case-meta">重庆团结村中心站 ｜ 重庆→中亚/欧洲 ｜ 2014-2026</div></div><div class="section"><h2>基本信息</h2><p>企业: 重庆团结村中心站 | 目标市场: 重庆→中亚/欧洲 | 时间: 2014-2026</p></div><div class="section"><h2>案例背景</h2><p>重庆团结村中心站是中国西部最重要的铁路物流枢纽之一。十年间该站开行的中欧班列从414列增长至1911列，增长约3.6倍。团结村中心站已成为西部陆海新通道与中欧班列的核心交汇节点，承担着南向通道和北向通道的双向换装和中转功能。重庆作为通道主枢纽的地位通过团结村中心站的发展得到了充分彰显。</p></div><div class="section"><h2>出海策略</h2><p>1. 不断扩大中欧班列开行规模，从414列增至1911列十年增长3.6倍；2. 团结村中心站作为南北双向通道的核心交汇节点实现一站换装；3. 联合海关推行铁路快速通关模式减少口岸滞留；4. 与中亚欧洲多国铁路公司协调轨距和信号制式等标准差异；5. 提供统一的多式联运服务标准。</p></div><div class="section"><h2>商务谈判要点</h2><p>1. 与沿线各国铁路公司谈判过境运价和优先通行权；2. 与大型货主企业签订年度运量协议保证满载率；3. 多语种运输单据的准备和管理需要专业团队支持。</p></div><div class="section"><h2>数据成果</h2><div class="data-grid"><div class="data-item"><div class="num">1911列</div><div class="label">2025年中欧班列年开行量</div></div>
+<div class="data-item"><div class="num">3.6倍</div><div class="label">十年间开行量增长倍数</div></div>
+<div class="data-item"><div class="num">414→1911</div><div class="label">2014→2025增长轨迹</div></div></div>
+</div></div><div class="section"><h2>经验总结</h2><p>1. 团结村中心站的增长轨迹是西部陆海新通道和中国对外开放不断深化的缩影；2. 通道枢纽节点的运营能力和效率决定了整个通道的竞争力；3. 重庆作为双通道交汇枢纽的战略地位正在持续强化。</p></div><div class="section"><h2>相关术语</h2><div><a href="#" class="term-link">中欧班列</a><a href="#" class="term-link">团结村中心站</a><a href="#" class="term-link">通道枢纽</a><a href="#" class="term-link">铁路快速通关</a><a href="#" class="term-link">多式联运</a><a href="#" class="term-link">亚欧快线</a></div></div><div class="section"><h2>参考文献/来源</h2><div class="source-box"><p><a href="https://www.cq.gov.cn/zt/xblhxtd/rdxw/202606/t20260618_15765049.html" target="_blank">https://www.cq.gov.cn/zt/xblhxtd/rdxw/202606/t20260618_15765049.html</a> — 414列→1911列！团结村中心站开行中欧班列十年增长约3.6倍</p></div></div></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<script>
+(function() {
+  var bar = document.getElementById('scrollProgress');
+  function update() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    bar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+
+  var btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.setAttribute('aria-label', '\u8fd4\u56de\u9876\u90e8');
+  btn.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>';
+  document.body.appendChild(btn);
+  btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  function toggleBtn() {
+    btn.classList.toggle('visible', window.pageYOffset > 400);
+  }
+  window.addEventListener('scroll', toggleBtn, { passive: true });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.section').forEach(function(el) { observer.observe(el); });
+
+})();
+</script>
+
+</body></html>

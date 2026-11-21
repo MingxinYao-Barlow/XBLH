@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>汽车制造 · 渝车出海 · 渝车出海 — 西部陆海新通道商务案例库</title><link rel="stylesheet" href="case-style.css"></head><body><div class="case-wrapper"><a href="../index.html" class="back-link" onclick="localStorage.setItem('nltc_goto','business');return true">← 返回案例库</a><div class="case-header"><div class="case-tag">汽车制造 · 渝车出海</div><h1>汽车制造 · 渝车出海 · 渝车出海</h1><div class="case-meta">重庆长安/赛力斯等车企 ｜ 泰国/印尼/越南 ｜ 2024-2025</div></div><div class="section"><h2>基本信息</h2><p>企业: 重庆长安/赛力斯等车企 | 目标市场: 泰国/印尼/越南 | 时间: 2024-2025</p></div><div class="section"><h2>案例背景</h2><p>重庆作为中国重要的汽车产业基地，积极推动新能源汽车出口。2024年重庆市发布渝车出海专项行动方案，目标是通过西部陆海新通道铁海联运优势大幅提升重庆造汽车在东盟市场份额。长安汽车在泰国建立右舵车生产基地，赛力斯等品牌通过铁海联运将新能源汽车高效出口至印尼等东盟国家。通道将重庆到东盟的运输时间从传统的30天缩短至15天以内。</p></div><div class="section"><h2>出海策略</h2><p>1. 利用西部陆海新通道铁海联运班列，将整车从重庆团结村中心站经广西北部湾港转运至东盟各国港口；2. 在泰国设立右舵车生产基地，实现本地化生产以规避关税壁垒；3. 采用KD组装模式出口至越南、缅甸等市场，利用当地劳动力优势降低成本；4. 联合陆海新通道运营公司定制汽车专列，保障运输时效和安全性；5. 渝车出海专项行动整合政府、企业、通道三方资源形成合力。</p></div><div class="section"><h2>商务谈判要点</h2><p>1. 合资谈判中合理分配股权和控制权，确保中方核心技术优势；2. 利用RCEP关税减让优惠，在合同中明确原产地证明条款以享受零关税待遇；3. 跨境支付采用信用证或跨境人民币结算，降低汇率风险；4. 与当地经销商签订排他性协议时需充分考虑东盟反垄断法规。</p></div><div class="section"><h2>数据成果</h2><div class="data-grid"><div class="data-item"><div class="num">15天</div><div class="label">重庆至东盟铁海联运运输时间</div></div>
+<div class="data-item"><div class="num">10万+</div><div class="label">重庆汽车年出口东盟目标销量(辆)</div></div>
+<div class="data-item"><div class="num">68.2%</div><div class="label">2025年首季货运量同比增长</div></div></div>
+</div></div><div class="section"><h2>经验总结</h2><p>1. 西部陆海新通道的铁海联运模式是内陆车企出海的物流最优解，运输时间缩短50%以上；2. 本地化生产是规避关税壁垒、深度融入目标市场的关键策略；3. RCEP等自贸协定的关税优惠是出口企业的重要政策红利；4. 通道的稳定性和班列频次直接影响出口计划的可靠性。</p></div><div class="section"><h2>相关术语</h2><div><a href="#" class="term-link">铁海联运</a><a href="#" class="term-link">渝车出海</a><a href="#" class="term-link">KD组装</a><a href="#" class="term-link">RCEP</a><a href="#" class="term-link">原产地证书</a><a href="#" class="term-link">跨境人民币结算</a><a href="#" class="term-link">右舵车</a><a href="#" class="term-link">汽车专列</a></div></div><div class="section"><h2>参考文献/来源</h2><div class="source-box"><p><a href="https://www.cq.gov.cn/zt/xblhxtd/gjqyhz/gjhz/202604/t20260416_15614231.html" target="_blank">https://www.cq.gov.cn/zt/xblhxtd/gjqyhz/gjhz/202604/t20260416_15614231.html</a> — 渝车出海再加速 重庆造新能源汽车高效通达东盟</p></div></div></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<script>
+(function() {
+  var bar = document.getElementById('scrollProgress');
+  function update() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    bar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+
+  var btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.setAttribute('aria-label', '\u8fd4\u56de\u9876\u90e8');
+  btn.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>';
+  document.body.appendChild(btn);
+  btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  function toggleBtn() {
+    btn.classList.toggle('visible', window.pageYOffset > 400);
+  }
+  window.addEventListener('scroll', toggleBtn, { passive: true });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.section').forEach(function(el) { observer.observe(el); });
+
+})();
+</script>
+
+</body></html>

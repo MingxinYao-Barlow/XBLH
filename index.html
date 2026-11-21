@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西部陆海新通道商务与语言服务数据库</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="bannerSBS.jpg" alt="SBS" class="header-logo">
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <button class="nav-btn active" data-module="home">首页</button>
+      <button class="nav-btn" data-module="literature">多语种文献库</button>
+      <button class="nav-btn" data-module="business">商务案例库</button>
+      <button class="nav-btn" data-module="academic">学术成果库</button>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <img src="backgroundimg_sharp.jpg" alt="西部陆海新通道" class="hero-img">
+  <div class="hero-overlay">
+    <div class="hero-title">
+      <span class="hero-title-main">西部陆海新通道</span>
+      <span class="hero-title-sub">商务与语言服务数据库</span>
+    </div>
+    <p class="hero-desc">服务西部陆海新通道国家战略<br>聚焦商务信息 · 多语种语言资源 · 深度研究报告 &mdash; 为政府决策、企业出海、学术研究提供智能语言支持</p>
+  </div>
+</div>
+<section class="module active" id="module-home">
+  <div class="module-inner">
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-value" data-target="142.5"><span class="stat-number">0</span><span class="stat-unit">万标箱</span></div>
+        <div class="stat-label">2025年铁海联运班列运量</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" data-target="202.6"><span class="stat-number">0</span><span class="stat-unit">点</span></div>
+        <div class="stat-label">2025年通道发展指数</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" data-target="1.35"><span class="stat-number">0</span><span class="stat-unit">万亿元</span></div>
+        <div class="stat-label">2025年前10月进出口额</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" data-target="127"><span class="stat-number">0</span><span class="stat-unit">个国家</span></div>
+        <div class="stat-label">通道网络覆盖范围</div>
+      </div>
+    </div>
+    <div class="charts-dashboard">
+      <div class="chart-card wide reveal">
+        <h3>铁海联运班列年运量趋势（万标箱）</h3>
+        <div class="chart-container" id="chartVolume"></div>
+      </div>
+      <div class="chart-card wide reveal reveal-delay-1">
+        <h3>通道发展指数趋势</h3>
+        <div class="chart-container" id="chartIndex"></div>
+      </div>
+      <div class="chart-card wide reveal reveal-delay-2">
+        <h3>网络覆盖增长</h3>
+        <div class="chart-container" id="chartNetwork"></div>
+      </div>
+    </div>
+    <div class="home-grid">
+      <div class="home-card reveal">
+        <h3>多语种政策与经贸文献库</h3>
+        <p>系统收录中国及通道沿线国家（尤其是东盟）的经贸政策、法律法规、投资指南等官方文献，建成汉英/汉-东盟小语种平行语料库。</p>
+        <div class="card-meta"><span>文献总数</span><strong>36</strong><span>覆盖语种</span><strong>1</strong></div>
+        <button class="go-btn" data-module="literature">进入模块</button>
+      </div>
+      <div class="home-card reveal reveal-delay-1">
+        <h3>企业出海商务案例与术语库</h3>
+        <p>聚焦重庆及西部地区企业国际化案例，收录海外市场分析、跨文化沟通、商务谈判实战资料，为教学和企业培训提供一手素材。</p>
+        <div class="card-meta"><span>案例总数</span><strong>8</strong><span>术语条目</span><strong>40</strong></div>
+        <button class="go-btn" data-module="business">进入模块</button>
+      </div>
+      
+      <div class="home-card reveal reveal-delay-3">
+        <h3>学术研究动态与成果库</h3>
+        <p>跟踪并收录国内外关于西部陆海新通道的学术论文、研究报告、政策解读，打造一站式学术资源中心。</p>
+        <div class="card-meta"><span>收录论文</span><strong>30</strong><span>研究报告</span><strong>9</strong></div>
+        <button class="go-btn" data-module="academic">进入模块</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module" id="module-literature">
+  <div class="module-inner">
+    <div class="module-header reveal">
+      <h2>多语种政策与经贸文献库</h2>
+      <p>系统收集中国及通道沿线国家（尤其是东盟）的经贸政策、法律法规、投资指南等官方文献，建成汉英/汉-东盟小语种平行语料库，提供精准翻译、术语查询和原文下载服务。</p>
+    </div>
+    <div class="module-toolbar reveal">
+      <div class="search-box">
+        <input type="text" id="litSearch" placeholder="搜索文献标题、关键词、国别或语种...">
+        <button id="litSearchBtn">搜索</button>
+      </div>
+      <div class="filter-group">
+        <select id="litLang"><option value="">全部语种</option><option>中文</option><option>英语</option></select>
+        <select id="litCountry"><option value="">全部国别</option><option>中国</option></select>
+        <select id="litCategory"><option value="">全部类别</option><option>经贸政策</option><option>法律法规</option><option>投资指南</option><option>关税协定</option><option>行业标准</option></select>
+      </div>
+    </div>
+    <div class="data-table-wrap reveal">
+      <table class="data-table" id="litTable">
+        <thead><tr><th>标题</th><th>国别</th><th>语种</th><th>类别</th><th>年份</th><th>原文链接</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="pagination" id="litPagination"></div>
+  </div>
+</section>
+
+<section class="module" id="module-business">
+  <div class="module-inner">
+    <div class="module-header reveal">
+      <h2>企业出海商务案例与术语库</h2>
+      <p>聚焦重庆及西部地区企业（汽车、电子、机械等）的国际化案例，收录海外市场分析、跨文化沟通、商务谈判等实战资料，建成动态更新的"中国商务出海"案例库和术语库。</p>
+    </div>
+    <div class="module-tabs reveal">
+      <button class="subtab-btn active" data-subtab="cases">商务案例</button>
+      <button class="subtab-btn" data-subtab="terms">商务术语</button>
+    </div>
+    <div class="subtab-panel active" id="subtab-cases">
+      <div class="module-toolbar reveal">
+        <div class="search-box">
+          <input type="text" id="caseSearch" placeholder="搜索案例标题、企业名称或行业...">
+          <button id="caseSearchBtn">搜索</button>
+        </div>
+        <div class="filter-group">
+          <select id="caseIndustry"><option value="">全部行业</option><option>汽车制造</option><option>电子信息</option><option>机械装备</option><option>跨境电商</option><option>新能源</option><option>生物医药</option></select>
+          <select id="caseCountry"><option value="">全部目标市场</option><option>越南</option><option>泰国</option><option>印度尼西亚</option><option>马来西亚</option><option>新加坡</option><option>菲律宾</option><option>缅甸</option><option>老挝</option><option>柬埔寨</option></select>
+        </div>
+      </div>
+      <div class="card-grid" id="caseGrid"></div>
+      <div class="pagination" id="casePagination"></div>
+    </div>
+    <div class="subtab-panel" id="subtab-terms">
+      <div class="module-toolbar reveal">
+        <div class="search-box">
+          <input type="text" id="termSearch" placeholder="搜索术语（中文/英文）...">
+          <button id="termSearchBtn">搜索</button>
+        </div>
+        <div class="filter-group">
+          <select id="termDomain"><option value="">全部领域</option><option>国际贸易</option><option>跨境电商</option><option>物流运输</option><option>金融结算</option><option>法律合规</option><option>市场营销</option><option>跨文化沟通</option></select>
+        </div>
+      </div>
+      <div class="data-table-wrap reveal">
+        <table class="data-table" id="termTable">
+          <thead><tr><th>中文术语</th><th>英文术语</th><th>领域</th><th>定义</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="pagination" id="termPagination"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="module" id="module-academic">
+  <div class="module-inner">
+    <div class="module-header reveal">
+      <h2>学术研究动态与成果库</h2>
+      <p>跟踪并收录国内外关于西部陆海新通道的学术论文、研究报告、政策解读等，打造该领域的一站式学术资源中心，促进学术交流。</p>
+    </div>
+    <div class="module-toolbar reveal">
+      <div class="search-box">
+        <input type="text" id="acadSearch" placeholder="搜索论文标题、作者、关键词或期刊...">
+        <button id="acadSearchBtn">搜索</button>
+      </div>
+      <div class="filter-group">
+        <select id="acadType"><option value="">全部类型</option><option>期刊论文</option><option>学位论文</option><option>研究报告</option><option>政策解读</option><option>会议论文</option></select>
+        <select id="acadYear"><option value="">全部年份</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option></select>
+        <select id="acadLang"><option value="">全部语种</option><option>中文</option><option>英文</option></select>
+      </div>
+    </div>
+    <div class="data-table-wrap reveal">
+      <table class="data-table" id="acadTable">
+        <thead><tr><th>标题</th><th>作者</th><th>来源</th><th>类型</th><th>年份</th><th>操作</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="pagination" id="acadPagination"></div>
+  </div>
+</section>
+
+<footer class="site-footer reveal">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <p>四川外国语大学商务英语学院</p>
+      <p>数据来源：国家统计局、海关总署、西部陆海新通道门户网站等官方公开渠道</p>
+    </div>
+
+    <div style="margin-top: 12px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.78rem; color: rgba(255,255,255,0.5);">
+      <p style="margin-bottom: 6px; font-weight: 500; color: rgba(255,255,255,0.6);">数据来源说明</p>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.7;">
+        <li><strong>铁海联运运量：</strong>中国国家铁路集团、中国铁路南宁局集团</li>
+        <li><strong>通道发展指数：</strong>重庆市人民政府口岸物流办、中国物流与采购联合会</li>
+        <li><strong>网络覆盖：</strong>重庆市人民政府口岸物流办、交通运输部、海关总署</li>
+      </ul>
+    </div>
+
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
